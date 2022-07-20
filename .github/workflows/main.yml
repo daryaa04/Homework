@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies 
         run: pip install -r requirements.txt
       - name: Exeute Notebook 
-        run: jupyter-nbconvert --execute Homework.ipynb --to html
+        run: jupyter nbconvert --execute Homework.ipynb --to html
       - name: Upload a Build Artifact 
         uses: actions/upload-artifact@v3.1.0
         with:
