@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
 
   workflow_dispatch:
+concurrency: '**/setup.py'
 
 jobs:
    build:
